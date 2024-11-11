@@ -14,7 +14,7 @@ export const Register = () => {
         try{ 
              var dataObj = {
             "data":data
-        } //http:localhost:3000/student/register 
+        } 
        const res = await fetch('https://next-server-theta.vercel.app/student/register',{
             method:'post',
             headers:{
@@ -24,8 +24,8 @@ export const Register = () => {
 
           })
           const result = await res.json()
-          const {acknowledged,insertedId}=result;
-          if(acknowledged && insertedId){
+          const { acknowledged,insertedId } = result;
+          if (acknowledged && insertedId) {
             alert("success")
           } else {
             alert("fail")
