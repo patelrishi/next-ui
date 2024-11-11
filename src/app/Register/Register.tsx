@@ -15,7 +15,7 @@ export const Register = () => {
              var dataObj = {
             "data":data
         } 
-       const res = await fetch('https://next-server-theta.vercel.app/student/register',{
+       const res = await fetch('http://next-server-theta.vercel.app/student/register',{
             method:'post',
             headers:{
                 'Content-Type':'application/json',
