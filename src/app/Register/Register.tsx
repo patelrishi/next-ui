@@ -1,10 +1,10 @@
 'use client'
-import React from 'react'
+import React,{useState} from 'react'
 
 export const Register = () => {
-    const [data,setData]=React.useState({})
+    const [data,setData]=useState({})
 
-    const handleChange=(eve:any)=>{
+    const handleChange=(eve: any)=>{
         const {name,value}=eve.target
         setData({...data,[name]:value})
         
@@ -15,7 +15,7 @@ export const Register = () => {
              var dataObj = {
             "data":data
         } 
-       const res = await fetch('http://next-server-theta.vercel.app/student/register',{
+       const res = await fetch('https://next-server-theta.vercel.app/student/register',{
             method:'post',
             headers:{
                 'Content-Type':'application/json',
@@ -31,7 +31,7 @@ export const Register = () => {
             alert("fail")
           }
           
-        } catch(ex:any){
+        } catch(ex: any){
             console.error(ex)
             alert(ex.message)
         }
