@@ -39,7 +39,7 @@ export const Register = () => {
 
   return (
     <div>
-    <h3>Register</h3><br/>
+    <h3>Registration Form</h3><br/>
     <p>
         <b>Name:</b> <input name='name' onChange={handleChange} />
     </p><br/>
@@ -54,7 +54,7 @@ export const Register = () => {
     </p><br/>
 
     <p>
-        <button  onClick={fnRegister} > Registration</button>
+        <button  onClick={fnRegister} > Register</button>
     </p>
 
     </div>
